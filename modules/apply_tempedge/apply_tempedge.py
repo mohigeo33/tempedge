@@ -119,9 +119,9 @@ def fctn_get_image_stats(img):
     img_lst = img.select('LST')
 
     # Calculate basic statistics
-    img_lst_mean_value = img_lst.reduceRegion(ee.Reducer.mean(), roi, 30, crs='EPSG:4326', bestEffort=True, maxPixels=1e9).getInfo().get('LST')
-    img_lst_max_value = img_lst.reduceRegion(ee.Reducer.max(), roi, 30, crs='EPSG:4326', bestEffort=True, maxPixels=1e9).getInfo().get('LST')
-    img_lst_min_value = img_lst.reduceRegion(ee.Reducer.min(), roi, 30, crs='EPSG:4326', bestEffort=True, maxPixels=1e9).getInfo().get('LST')
+    img_lst_mean_value = img_lst.reduceRegion(ee.Reducer.mean(), roi, 30, crs= epsg, bestEffort=True, maxPixels=1e9).getInfo().get('LST')
+    img_lst_max_value = img_lst.reduceRegion(ee.Reducer.max(), roi, 30, crs= epsg, bestEffort=True, maxPixels=1e9).getInfo().get('LST')
+    img_lst_min_value = img_lst.reduceRegion(ee.Reducer.min(), roi, 30, crs= epsg, bestEffort=True, maxPixels=1e9).getInfo().get('LST')
     img_date = img.date().getInfo().get('value')
     img_systemindex = img.get('system:index').getInfo()
     img_cloud_cover = img.get('CLOUD_COVER').getInfo()
