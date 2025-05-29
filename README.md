@@ -24,13 +24,13 @@ If you use TempEdge in your work, please cite the Zenodo archive:
 ## 📘 3. How to use the repository?
 This repository has three modules:
 
-### apply_tempedge: 
+*apply_tempedge:* 
 If you are interested in applying TempEdge in your study to detect and filter out artefacts, you should use this module
 
-### dev_analysis_tempedge: 
+*dev_analysis_tempedge:* 
 If you are interested in seeing how TempEdge was developed and how statistical analysis is performed to reinforce the method's effectiveness
 
-### cross_site_validation: 
+*cross_site_validation:* 
 If you are interested in seeing how the cross-site validation was performed for the TempEdge
 
 ---
@@ -60,31 +60,31 @@ pip install -r requirements.txt
 
 You must also authenticate and initialise Google Earth Engine for Python.
 ```
-## 🧪 6. Scripts Overview
-### apply_tempedge.py
+## 🧪 6. Scripts overview
+*apply_tempedge.py*
 Full implementation code for future TempEdge users
 Loads Landsat image collections
 Applies TempEdge filtering to retain only plausible LST values
 Return the collections with filtered artefacts and further use
 
-### dev_analysis_tempedge.py
+*dev_analysis_tempedge.py*
 Full development and statistical workflow
 TempEdge threshold derivation
 Artefact comparison with alternative thresholding methods
 Includes visualizations from manuscript
 
-### cross_site_validation.py
+*cross_site_validation.py*
 Evaluates TempEdge in multiple tropical cities (e.g., Lagos, Mérida, Kuala Lumpur)
 Generates comparison figure for raw vs. filtered LST values used in the manuscript
 
-## 📊 7. Scripts Overview
+## 📊 7. Data overview
 Data used for statistical analysis in the manuscript:
-### dfallmonths.csv
+*dfallmonths.csv*
 Data used for cross-site validations used for the manuscript
-### dfallmonths_kuala.csv
-### dfallmonths_lagos.csv
-### dfallmonths_merida
-### dfallmonths_prudente.csv
+*dfallmonths_kuala.csv*
+*dfallmonths_lagos.csv*
+*dfallmonths_merida*
+*dfallmonths_prudente.csv*
 
 ## 📌 8. Notes
 Default ROI: Phnom Penh, Cambodia (editable)
