@@ -15,17 +15,15 @@
 - Threshold derivation using TempEdge logic
 - Applying TempEdge Threshold to filter artefacts
 
-## 🔍 2. How to use the repository?
+## 📘 2. How to use the repository?
 This repository has three modules:
 apply_tempedge: If you are interested in applying TempEdge in your study to detect and filter out artefacts, you should use this module
 dev_analysis_tempedge: If you are interested in seeing how TempEdge was developed and how statistical analysis is performed to reinforce the method's effectiveness
 cross_site_validation: If you are interested in seeing how the cross-site validation was performed for the TempEdge
 
 ---
-
+## 📁 Repository Structure
  ```bash
-📁 Repository Structure
-
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
 ├── .gitignore ← Ignored files
