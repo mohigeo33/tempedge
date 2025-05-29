@@ -104,7 +104,7 @@ EPSG codes are defined per location
 This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
 You may share and adapt the material for non-commercial purposes with appropriate credit as follows:
 
-> Mohiuddin, G. (2025). *TempEdge: Artefact Detection and Filtering in Landsat Analysis-Ready Surface Temperature Data* (v1.0.0) [Software].[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15543544.svg)](https://doi.org/10.5281/zenodo.15543544)
+Mohiuddin, G. (2025). TempEdge: Artefact Detection and Filtering in Landsat Analysis-Ready Surface Temperature Data (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.15543544
 
 ## 📫 10. Contact
 For queries, please contact: Gulam Mohiuddin at: Gulam.Mohiuddin@hnee.de
