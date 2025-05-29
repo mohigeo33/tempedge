@@ -77,16 +77,22 @@ Includes visualizations from manuscript
 Evaluates TempEdge in multiple tropical cities (e.g., Lagos, Mérida, Kuala Lumpur)
 Generates comparison figure for raw vs. filtered LST values used in the manuscript
 
-## 📌 7. Notes
-Default ROI: Phnom Penh, Cambodia (editable)
+## 📊 7. Scripts Overview
+Data used for statistical analysis in the manuscript:
+### dfallmonths.csv
+Data used for cross-site validations used for the manuscript
+### dfallmonths_kuala.csv
+### dfallmonths_lagos.csv
+### dfallmonths_merida
+### dfallmonths_prudente.csv
 
+## 📌 8. Notes
+Default ROI: Phnom Penh, Cambodia (editable)
 EPSG codes are defined per location
 
-
-## 🔒 8. License
+## 🔒 9. License
 This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
-
 You may share and adapt the material for non-commercial purposes with appropriate credit.
 
-## 📫 9. Contact
+## 📫 10. Contact
 For queries, please contact: Gulam Mohiuddin at: Gulam.Mohiuddin@hnee.de
