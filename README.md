@@ -22,7 +22,7 @@ dev_analysis_tempedge: If you are interested in seeing how TempEdge was develope
 cross_site_validation: If you are interested in seeing how the cross-site validation was performed for the TempEdge
 
 ---
-## 📁 Repository Structure
+## 📁 3. Repository Structure
  ```bash
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
@@ -36,7 +36,7 @@ tempedge/
 │ └── dev_analysis_tempedge.py
 └── cross_site_validation/ ← cross-site testing across tropical cities
 └── cross_site_validation.py
-
+```
 ---
 
 ## ⚙️ Requirements
