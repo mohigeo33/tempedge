@@ -19,8 +19,8 @@ This repository is not intended for end-users or application interfaces, but ins
 
 ---
 
-## 📁 Repository Structure
-
+<details open>
+<summary><strong>📁 Repository Structure</strong></summary>
 tempegde/
 │
 ├── LICENSE ← License file (CC BY-NC 4.0)
