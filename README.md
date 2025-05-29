@@ -20,7 +20,7 @@ This repository is not intended for end-users or application interfaces, but ins
 ---
 
  ```bash
-<summary><strong>📁 Repository Structure</strong></summary>
+📁 Repository Structure
 
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
