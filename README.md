@@ -97,11 +97,14 @@ Data used for cross-site validations used for the manuscript
 
 ## 📌 8. Notes
 Default ROI: Phnom Penh, Cambodia (editable)
+
 EPSG codes are defined per location
 
 ## 🔒 9. License
 This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
-You may share and adapt the material for non-commercial purposes with appropriate credit.
+You may share and adapt the material for non-commercial purposes with appropriate credit as follows:
+
+> Mohiuddin, G. (2025). *TempEdge: Artefact Detection and Filtering in Landsat Analysis-Ready Surface Temperature Data* (v1.0.0) [Software].[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15543544.svg)](https://doi.org/10.5281/zenodo.15543544)
 
 ## 📫 10. Contact
 For queries, please contact: Gulam Mohiuddin at: Gulam.Mohiuddin@hnee.de
