@@ -81,7 +81,7 @@ phnom_gdf = ox.geocode_to_gdf('Phnom Penh, Cambodia')
 phnom_geojson = phnom_gdf.iloc[0].geometry.__geo_interface__
 phnom_aoi = ee.Geometry(phnom_geojson)
 roi = phnom_aoi
-epsg = 'EPSG:4326' # we used this as a global epsg, it should work for every place, you can also match this with your area UTM code
+epsg = 'EPSG:32648' # we used this for Phnom Penh, please replace this with your area UTM code
 
 # Thresholds for plausibility check (NOTE: this we used for tropical region, if your study area falls into tropics do not change)
 MIN_REASONABLE_LST = 10.0  # °C
@@ -160,24 +160,7 @@ def add_date_info(df):
   df['DOY'] = pd.DatetimeIndex(df['Timestamp']).dayofyear
   return df
   
-# Function 6: Loading the csv/txt file
-def load_csv(filepath):
-    data =  []
-    col = []
-    checkcol = False
-    with open(filepath) as f:
-        for val in f.readlines():
-            val = val.replace("\n","")
-            val = val.split(',')
-            if checkcol is False:
-                col = val
-                checkcol = True
-            else:
-                data.append(val)
-    df = pd.DataFrame(data=data, columns=col)
-    return df
-
-# Function 7: Applying TempEdge thresholds
+# Function 6: Applying TempEdge thresholds
 def apply_temp_threshold(image):
     min_threshold = TempEdge_minimum_threshold
     max_threshold = TempEdge_maximum_threshold
@@ -300,8 +283,9 @@ print(f"Before TempEdge Minimum LST: {min_lst_before_tempedge:.2f}°C")
 print(f"Before TempEdge Maximum LST: {max_lst_before_tempedge:.2f}°C")
 
 # --------------------------------------------------
-# GENERAL PLAUSIBILITY TEST
+# TempEdge: STEP 1
 # --------------------------------------------------
+# general plausibility test
 # Initialize list to store valid monthly images
 valid_monthly_images = []
 
@@ -329,13 +313,14 @@ least_missing_pixels_monthly = pd.DataFrame(valid_monthly_images)
 if least_missing_pixels_monthly.empty:
     print("⚠️ No valid monthly images passed the plausibility test.")
     print("   Please try increasing the study period.\n")
-# --------------------------------------------------
-# TempEdge: STEP 1
-# --------------------------------------------------
+
 # Now, for each month, get the lowest MinLST and highest MaxLST from the selected rows
 monthly_min_lst_thresholds = least_missing_pixels_monthly.groupby('Month')['MinLST'].min()
 monthly_max_lst_thresholds = least_missing_pixels_monthly.groupby('Month')['MaxLST'].max()
 
+# --------------------------------------------------
+# TempEdge: STEP 2
+# --------------------------------------------------
 # Find the absolute minimum value and the corresponding month
 TempEdge_minimum_threshold = monthly_min_lst_thresholds.min()
 TempEdge_minimum_month = monthly_min_lst_thresholds.idxmin()
