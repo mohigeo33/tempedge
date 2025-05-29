@@ -1,6 +1,6 @@
 # TempEdge: Artefact Detection and Filtering in Analysis-ready Landsat Surface Temperature Data
 
-**Author**: ***[Gulam Mohiuddin](https://www.linkedin.com/in/mohigeo33/)*** (2025)  
+**Author of the code**: ***[Gulam Mohiuddin](https://www.linkedin.com/in/mohigeo33/)*** (2025)  
 **License**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
 **Repository Purpose**: Methodological transparency and reproducibility for future users.
 
