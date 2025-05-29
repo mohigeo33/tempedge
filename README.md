@@ -18,10 +18,11 @@
 This repository is not intended for end-users or application interfaces, but instead for scientific reviewers and researchers assessing the reproducibility and robustness of the method.
 
 ---
+ ```bash
 <details open>
 
 <summary><strong>📁 Repository Structure</strong></summary>
- ```bash
+
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
 ├── .gitignore ← Ignored files
