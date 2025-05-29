@@ -4,7 +4,11 @@
 **License**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
 **Repository Purpose**: Methodological transparency and reproducibility for future users.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15543544.svg)](https://doi.org/10.5281/zenodo.15543544)
+## 📑 1. Citation for the code
+
+If you use TempEdge in your work, please cite the Zenodo archive:
+
+> Mohiuddin, G. (2025). *TempEdge: Artefact Detection and Filtering in Landsat Analysis-Ready Surface Temperature Data* (v1.0.0) [Software].[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15543544.svg)](https://doi.org/10.5281/zenodo.15543544)
 
 ---
 
