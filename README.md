@@ -82,12 +82,18 @@ Generates comparison figure for raw vs. filtered LST values used in the manuscri
 
 ## 📊 7. Data overview
 Data used for statistical analysis in the manuscript:
-*dfallmonths.csv*
+
+***dfallmonths.csv***
+
 Data used for cross-site validations used for the manuscript
-*dfallmonths_kuala.csv*
-*dfallmonths_lagos.csv*
-*dfallmonths_merida*
-*dfallmonths_prudente.csv*
+
+***dfallmonths_kuala.csv***
+
+***dfallmonths_lagos.csv***
+
+***dfallmonths_merida***
+
+***dfallmonths_prudente.csv***
 
 ## 📌 8. Notes
 Default ROI: Phnom Penh, Cambodia (editable)
