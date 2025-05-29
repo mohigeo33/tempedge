@@ -18,11 +18,9 @@
 This repository is not intended for end-users or application interfaces, but instead for scientific reviewers and researchers assessing the reproducibility and robustness of the method.
 
 ---
-<details open>
 
-<summary><strong>📁 Repository Structure</strong></summary>
  ```bash
-
+<summary><strong>📁 Repository Structure</strong></summary>
 
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
@@ -36,9 +34,6 @@ tempedge/
 │ └── dev_analysis_tempedge.py
 └── cross_site_validation/ ← Cross-site testing across tropical cities
 └── cross_site_validation.py
-
-
-</details>
 
 ---
 
