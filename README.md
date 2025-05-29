@@ -32,7 +32,7 @@ This repository is not intended for end-users or application interfaces, but ins
 │ └── dev_analysis_tempedge.py
 └── cross_site_validation/ ← Cross-site testing across tropical cities
 └── cross_site_validation.py</strong></summary>
-
+<details>
 ---
 
 ## ⚙️ Requirements
