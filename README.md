@@ -34,10 +34,6 @@ tempedge/
 └── cross_site_validation/ ← Cross-site testing across tropical cities
 └── cross_site_validation.py
 
-bash
-Copy
-Edit
-
 </details>
 
 ---
