@@ -19,8 +19,9 @@ This repository is not intended for end-users or application interfaces, but ins
 
 ---
 <details open>
+  ```bash
 <summary><strong>📁 Repository Structure</strong></summary>
-```bash
+
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
 ├── .gitignore ← Ignored files
