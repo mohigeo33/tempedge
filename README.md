@@ -24,11 +24,14 @@ If you use TempEdge in your work, please cite the Zenodo archive:
 ## 📘 3. How to use the repository?
 This repository has three modules:
 
-apply_tempedge: If you are interested in applying TempEdge in your study to detect and filter out artefacts, you should use this module
+### apply_tempedge: 
+If you are interested in applying TempEdge in your study to detect and filter out artefacts, you should use this module
 
-dev_analysis_tempedge: If you are interested in seeing how TempEdge was developed and how statistical analysis is performed to reinforce the method's effectiveness
+### dev_analysis_tempedge: 
+If you are interested in seeing how TempEdge was developed and how statistical analysis is performed to reinforce the method's effectiveness
 
-cross_site_validation: If you are interested in seeing how the cross-site validation was performed for the TempEdge
+### cross_site_validation: 
+If you are interested in seeing how the cross-site validation was performed for the TempEdge
 
 ---
 ## 📁 3. Repository Structure
