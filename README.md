@@ -20,7 +20,7 @@ This repository is not intended for end-users or application interfaces, but ins
 ---
 <details open>
 <summary><strong>📁 Repository Structure</strong></summary>
-```
+```bash
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
 ├── .gitignore ← Ignored files
@@ -33,7 +33,6 @@ tempedge/
 │ └── dev_analysis_tempedge.py
 └── cross_site_validation/ ← Cross-site testing across tropical cities
 └── cross_site_validation.py
-```bash
 </details>
 
 ---
