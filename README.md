@@ -39,15 +39,15 @@ tempedge/
 ```
 ---
 
-## ⚙️ Requirements
+## ⚙️ 4. Requirements
 
 Install required libraries using:
 
 ```bash
 pip install -r requirements.txt
 
-You must also authenticate and initialize Google Earth Engine for Python.
-
+You must also authenticate and initialise Google Earth Engine for Python.
+```
 🧪 Scripts Overview
 dev_analysis_tempedge.py
 Full statistical workflow
