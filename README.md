@@ -2,20 +2,24 @@
 
 **Author**: ***[Gulam Mohiuddin](https://www.linkedin.com/in/mohigeo33/)*** (2025)  
 **License**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
-**Repository Purpose**: Methodological transparency and reproducibility for the future users.
+**Repository Purpose**: Methodological transparency and reproducibility for future users.
 
 ---
 
-## 🔍 Description
+## 🔍 1. Description
 
 **TempEdge** is a methodological framework designed to detect and filter artefacts in Landsat Collection 2 Level-2 (LC2L2) Surface Temperature (ST) data, particularly focused on tropical urban environments. The approach ensures high-quality LST observations by combining:
 
 - Cloud masking via CFMask
 - Monthly LST plausibility checks
 - Threshold derivation using TempEdge logic
-- Artefact filtering with statistical comparisons
+- Applying TempEdge Threshold to filter artefacts
 
-This repository is not intended for end-users or application interfaces, but instead for scientific reviewers and researchers assessing the reproducibility and robustness of the method.
+## 🔍 2. How to use the repository?
+This repository has three modules:
+apply_tempedge: If you are interested in applying TempEdge in your study to detect and filter out artefacts, you should use this module
+dev_analysis_tempedge: If you are interested in seeing how TempEdge was developed and how statistical analysis is performed to reinforce the method's effectiveness
+cross_site_validation: If you are interested in seeing how the cross-site validation was performed for the TempEdge
 
 ---
 
@@ -28,11 +32,11 @@ tempedge/
 ├── README.md ← This file
 ├── requirements.txt ← Required Python packages
 └── modules/ ← Main codebase
-├── apply_tempedge/ ← Final application of TempEdge thresholds
+├── apply_tempedge/ ← ready code for the future TempEdge users
 │ └── apply_tempedge.py
-├── dev_analysis_tempedge/ ← Development and statistical evaluation
+├── dev_analysis_tempedge/ ← development and statistical evaluation of the method
 │ └── dev_analysis_tempedge.py
-└── cross_site_validation/ ← Cross-site testing across tropical cities
+└── cross_site_validation/ ← cross-site testing across tropical cities
 └── cross_site_validation.py
 
 ---
