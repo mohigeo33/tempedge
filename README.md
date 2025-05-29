@@ -36,7 +36,7 @@ tempegde/
 │ └── cross_site_validation.py ← Cross-site testing across tropical cities
 │
 ├── requirements.txt ← Required Python packages
-
+</details>
 
 ---
 
