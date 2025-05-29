@@ -34,7 +34,7 @@ If you are interested in seeing how TempEdge was developed and how statistical a
 If you are interested in seeing how the cross-site validation was performed for the TempEdge
 
 ---
-## 📁 3. Repository Structure
+## 📁 4. Repository Structure
  ```bash
 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
@@ -51,7 +51,7 @@ tempedge/
 ```
 ---
 
-## ⚙️ 4. Requirements
+## ⚙️ 5. Requirements
 
 Install required libraries using:
 
@@ -60,37 +60,33 @@ pip install -r requirements.txt
 
 You must also authenticate and initialise Google Earth Engine for Python.
 ```
-🧪 Scripts Overview
-dev_analysis_tempedge.py
-Full statistical workflow
+## 🧪 6. Scripts Overview
+### apply_tempedge.py
+Full implementation code for future TempEdge users
+Loads Landsat image collections
+Applies TempEdge filtering to retain only plausible LST values
+Return the collections with filtered artefacts and further use
 
+### dev_analysis_tempedge.py
+Full development and statistical workflow
 TempEdge threshold derivation
-
 Artefact comparison with alternative thresholding methods
-
 Includes visualizations from manuscript
 
-apply_tempedge.py
-Loads GEE data
-
-Applies TempEdge filtering to retain only plausible LST values
-
-cross_site_validation.py
+### cross_site_validation.py
 Evaluates TempEdge in multiple tropical cities (e.g., Lagos, Mérida, Kuala Lumpur)
+Generates comparison figure for raw vs. filtered LST values used in the manuscript
 
-Generates comparison figure for raw vs. filtered LST values
-
-📌 Notes
+## 📌 7. Notes
 Default ROI: Phnom Penh, Cambodia (editable)
 
 EPSG codes are defined per location
 
-Ensure your GEE account has access to LC2L2 datasets
 
-🔒 License
+## 🔒 8. License
 This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
 
 You may share and adapt the material for non-commercial purposes with appropriate credit.
 
-📫 Contact
+## 📫 9. Contact
 For queries, please contact: Gulam Mohiuddin at: Gulam.Mohiuddin@hnee.de
