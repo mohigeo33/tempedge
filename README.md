@@ -63,17 +63,20 @@ You must also authenticate and initialise Google Earth Engine for Python.
 ## 🧪 6. Scripts overview
 *apply_tempedge.py*
 Full implementation code for future TempEdge users
+
 Loads Landsat image collections
 Applies TempEdge filtering to retain only plausible LST values
 Return the collections with filtered artefacts and further use
 
 *dev_analysis_tempedge.py*
+
 Full development and statistical workflow
 TempEdge threshold derivation
 Artefact comparison with alternative thresholding methods
 Includes visualizations from manuscript
 
 *cross_site_validation.py*
+
 Evaluates TempEdge in multiple tropical cities (e.g., Lagos, Mérida, Kuala Lumpur)
 Generates comparison figure for raw vs. filtered LST values used in the manuscript
 
