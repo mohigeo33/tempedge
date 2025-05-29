@@ -20,23 +20,18 @@ This repository is not intended for end-users or application interfaces, but ins
 ---
 
 <details open>
-<summary><strong>📁 Repository Structure</strong></summary>
-tempegde/
-│
+<summary><strong>📁 tempedge/
 ├── LICENSE ← License file (CC BY-NC 4.0)
 ├── .gitignore ← Ignored files
 ├── README.md ← This file
-│
-├── modules/
-│ ├── apply_tempedge/ ← Final application of TempEdge thresholds
-│ │ └── apply_tempedge.py
-│ ├── dev_analysis_tempedge/
-│ │ └── dev_analysis_tempedge.py ← Development and statistical evaluation
-│ └── cross_site_validation/
-│ └── cross_site_validation.py ← Cross-site testing across tropical cities
-│
 ├── requirements.txt ← Required Python packages
-</details>
+└── modules/ ← Main codebase
+├── apply_tempedge/ ← Final application of TempEdge thresholds
+│ └── apply_tempedge.py
+├── dev_analysis_tempedge/ ← Development and statistical evaluation
+│ └── dev_analysis_tempedge.py
+└── cross_site_validation/ ← Cross-site testing across tropical cities
+└── cross_site_validation.py</strong></summary>
 
 ---
 
