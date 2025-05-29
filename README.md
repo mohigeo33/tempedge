@@ -61,9 +61,9 @@ pip install -r requirements.txt
 You must also authenticate and initialise Google Earth Engine for Python.
 ```
 ## 🧪 6. Scripts overview
-*apply_tempedge.py*
-Full implementation code for future TempEdge users
+<u>*apply_tempedge.py*</u>
 
+Full implementation code for future TempEdge users
 Loads Landsat image collections
 Applies TempEdge filtering to retain only plausible LST values
 Return the collections with filtered artefacts and further use
