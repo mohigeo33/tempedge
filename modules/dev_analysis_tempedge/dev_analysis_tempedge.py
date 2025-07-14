@@ -222,6 +222,29 @@ imgCol_merge_L9_band_coh_clip = imgCol_merge_L9_band_coh.map(fun_clip)
 imgCol_merge = imgCol_merge_L8_band_coh_clip.merge(imgCol_merge_L9_band_coh_clip)
 
 # ====================================================================================================#
+# CALCULATING TOTAL NUMBER OF PIXELS IN STUDY AREA
+# ====================================================================================================#
+
+first_image = ee.Image(imgCol_merge.first())
+pixel_reference = first_image.select(0)
+# Create a binary image where every pixel (masked or unmasked) = 1
+binary_image = pixel_reference.unmask(1).gt(0)
+# Count total pixels using .count() reducer
+pixel_count_dict = binary_image.reduceRegion(
+    reducer=ee.Reducer.count(),
+    geometry=roi,
+    scale=30,
+    maxPixels=1e13
+)
+
+# Extract pixel count value from the dictionary
+# Since we used select(0), the key will be the name of that band — get it dynamically:
+band_name = pixel_reference.bandNames().get(0).getInfo()  # gets band name as string
+pixel_count = pixel_count_dict.get(band_name).getInfo()
+# Store and print the result
+print("Pixel count (including masked pixels):", pixel_count)
+
+# ====================================================================================================#
 # DATA EXTRACTIONS
 # ====================================================================================================#
 doi = imgCol_merge
@@ -288,11 +311,8 @@ df['Cloud'] = pd.to_numeric(df['Cloud'])
 df['missing_pixels'] = pd.to_numeric(df['missing_pixels'])
 df['DOY'] = pd.to_numeric(df['DOY'])
 
-# Compute area in m²
-area_m2 = roi.area().getInfo()
-
 # Calculate the missing pixel percentage and add it as a new column
-df['missing_pixel_percentage'] = (df['missing_pixels'] / area_m2) * 100
+df['missing_pixel_percentage'] = (df['missing_pixels'] / pixel_count) * 100
 
 # --------------------------------------------------
 # PRE-TempEdge MINIMUM & MAXIMUM LST
